@@ -24,14 +24,8 @@ const Form=()=> {
     if(birthdate.length<10 || birthdate == ""){
       alert("Ingrese fecha de nacimiento correcta");
     }
-    if(!emailRegex.test(email)){
-      alert("Ingrese un correo electronico correcto");
-    }
-    if(!argentinianPhoneRegex.test(phone)){
-      alert("Ingrese un telefono correcto");
-    }
     else{
-      const db = await SQLite.open('../certificates.db');
+      const db = await SQLite.open('../certificates.db').catch(console.e);
       await db.execute('INSERT INTO users VALUES (?1, ?2, ?3, ?4, ?5, ?6)', [uuid(), name, dni,birthdate,email,phone ]);
       
       setName("");
@@ -39,7 +33,7 @@ const Form=()=> {
       setDni("");
       setEmail("");
       setPhone("");
-      const isClosed = await db.close();
+      const isClosed = await db.close().catch(console.e);
     }
     
   }

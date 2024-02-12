@@ -15,7 +15,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
     "tauri-plugin-sqlite-api": "github:lzdyes/tauri-plugin-sqlite#v0.1.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.5.8",

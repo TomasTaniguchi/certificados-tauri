@@ -68,6 +68,14 @@
   padding: 1%;
   margin: 1%;
 }
+.headerTable {
+  padding: 0.5%;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
 .boton {
   padding: 1%;
   margin: 1%;
