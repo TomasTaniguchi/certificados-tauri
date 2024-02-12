@@ -25,7 +25,6 @@ function App() {
 
   return (
     <div className="container"> 
-      <h1>Tongas APP!</h1>
       <div>
       <Routes>
         <Route path="/" element={ <Form /> } />
